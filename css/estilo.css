@@ -10,7 +10,7 @@
 }
 
 header{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(219, 219, 219);
 }
 
 li a{
@@ -72,6 +72,7 @@ main{
 
 .servicios__main img{
     margin: 1rem;
+    transition: all 2s;
 
 }
 
@@ -288,4 +289,11 @@ footer iframe{
     article p{
         font-size: 1rem;
     }
+}
+
+/* animaciones */
+
+.servicios__main img:hover{
+    border-radius: 10%;
+    opacity: .5;
 }
