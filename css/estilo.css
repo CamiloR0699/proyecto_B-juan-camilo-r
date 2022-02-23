@@ -57,13 +57,13 @@ main{
     margin-bottom: 2rem;
 }
 
-h2{
+.index__main h2{
     margin: 10rem 0;
     font-size: 140px;
     font-family: 'Inspiration', cursive;
 }
 
-h4{
+.index__main h4{
     font-size: 2.2rem;
     font-family: 'Big Shoulders Display', cursive;
 }
@@ -119,4 +119,74 @@ footer h5{
 footer iframe{
     width: auto;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* media querie index */
+
+    .main__frase{
+        font-family: 'Staatliches', cursive;
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .index__main h2{
+        font-size: 3rem;
+        font-family: 'Inspiration', cursive;
+        margin: 2rem 0;
+    }
+
+    .index__imagenes{
+        margin: 2rem 0;
+    }
+
+    .index__imagenes img{
+        width: 5rem;
+    }
+
+    .index__main h4{
+        font-size: 1rem;
+        font-family: 'Big Shoulders Display', cursive;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* media querie footer */
+
+    footer h5{
+        font-size: .9rem;
+    }
+
+    footer p{
+        font-size: .7rem;
+    }
+
+    .footer__img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__logo{
+        width: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer3{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px){
 }
