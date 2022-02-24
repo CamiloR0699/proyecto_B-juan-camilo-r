@@ -18,13 +18,12 @@ li a{
     font-size: 1.3rem;
     margin: 0 1rem;
     font-family: 'Staatliches', cursive;
-}
-
-li a:hover{
-    color: white !important;
-    background-color: rgb(172, 0, 0);
-    border-radius: 5px;
-    
+    background-image: -webkit-linear-gradient(45deg, rgb(99, 0, 0) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgb(99, 0, 0) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
 }
 
 /* modificaciones index */
@@ -180,15 +179,19 @@ article p{
     font-size: 1.1rem;
 }
 
-button{
+.boton {
     padding: .5rem 1rem;
     margin: 1rem 3rem 4rem 3rem;
     background: none;
-    border: 3px solid white;
-    color: white;
+    border: 3px solid white;  
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
     font-family: 'Raleway', sans-serif;
-    ;
-}
+  }
 
 .nombre{
     position: relative;
@@ -301,11 +304,75 @@ footer iframe{
     }
 
     article h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     article p{
         font-size: 1rem;
+    }
+
+    /* media querie conocenos */
+
+    .menu__frase{
+        font-size: 2rem;
+    }
+
+    .conocenos__texto1{
+        font-size: .8rem;
+        margin: 0;
+        margin: 1rem 0;
+    }
+
+    .conocenos__texto2{
+        font-size: .8rem;
+        margin: 0;
+        margin: 1rem 0;
+    }
+
+    .conocenos__img{
+        margin: 0;
+    }
+
+    /* media querie contacto */
+
+    .ancho{
+        width: 15rem;
+    }
+
+    .nombre{
+        position: relative;
+        right: 5.5rem;
+    }
+    
+    .servicio{
+        position: relative;
+        right: 5.5rem;
+    }
+    
+    .comentarios{
+        position: relative;
+        right: 4.3rem;
+    }
+
+    .contacto__main textarea{
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .contacto__main h3{
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .form--fuente{
+        font-size: .9rem;
+    }
+
+    .boton{
+        font-size: .8rem;
+        margin: 2rem 1rem;
     }
 
     /* media querie footer */
@@ -380,6 +447,28 @@ footer iframe{
         font-size: 2rem;
     }
 
+    /* media querie conocenos */
+
+    .menu__frase{
+        font-size: 5rem;
+    }
+
+    .conocenos__texto1{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .conocenos__texto2{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .conocenos__img{
+        margin: 1rem 0;
+    }
+
+
+
     /* media querie footer */
 
     .footer__logo{
@@ -391,6 +480,8 @@ footer iframe{
 
 @media only screen and (min-width: 1201px) and (max-width: 1500px){
 
+    /* media querie servicos */
+
     .main__frase{
         font-size: 6rem
     }
@@ -398,21 +489,63 @@ footer iframe{
     article p{
         font-size: 1rem;
     }
+
+    /* media querie conocenos */
+
+    .menu__frase{
+        font-size: 7rem;
+    }
+
+    .conocenos__texto1{
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .conocenos__texto2{
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
 }
 
 /* animaciones */
 
 .servicios__main img:hover{
-    border-radius: 10%;
+    border-radius: 50%;
     opacity: .5;
-}
-
-button:hover{
-    background-color: white;
-    color: rgb(119, 20, 20);
 }
 
 .conocenos__img:hover{
-    border-radius: 10%;
+    border-radius: 50%;
     opacity: .5;
 }
+
+li a:hover {
+    background-position: 0;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 5px;
+  }
+
+.boton:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+
+.boton:hover {
+  color: rgb(173, 14, 14);
+}
+
+.boton:hover:after {
+  width: 110%;
+}
+  
