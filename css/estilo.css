@@ -18,8 +18,8 @@ li a{
     font-size: 1.3rem;
     margin: 0 1rem;
     font-family: 'Staatliches', cursive;
-    background-image: -webkit-linear-gradient(45deg, rgb(99, 0, 0) 50%, transparent 50%);
-    background-image: linear-gradient(45deg, rgb(99, 0, 0) 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(45deg, rgb(136, 0, 0) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgb(134, 0, 0) 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -311,6 +311,12 @@ footer iframe{
         font-size: 1rem;
     }
 
+    /* media querie menu */
+
+    .menu__main h2{
+        font-size: 4rem;
+    }
+
     /* media querie conocenos */
 
     .menu__frase{
@@ -522,7 +528,6 @@ footer iframe{
 li a:hover {
     background-position: 0;
     color: rgb(255, 255, 255) !important;
-    border-radius: 5px;
   }
 
 .boton:after {
@@ -548,4 +553,3 @@ li a:hover {
 .boton:hover:after {
   width: 110%;
 }
-  
