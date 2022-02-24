@@ -30,7 +30,11 @@ li a:hover{
 /* modificaciones index */
 
 main{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
+}
+
+.img-fluid{
+    width: 100%;
 }
 
 .main__frase{
@@ -94,6 +98,111 @@ article p{
     font-family: 'Oswald', sans-serif; 
     font-size: 1.2rem;
     text-align: justify;
+}
+
+/* modificaciones menú */
+
+.menu__main h2{
+    font-family: 'Cookie', cursive;
+    font-size: 7rem;
+    margin: 1rem 0;
+}
+
+.menu--margin{
+    margin-bottom: 1rem;
+}
+
+/* modificaciones conocenos */
+
+.menu__frase{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.conocenos__texto1{
+    font-family: 'Oswald', sans-serif;
+    margin: 5rem 8rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.conocenos__texto2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-right: 8rem;
+}
+
+.conocenos__img{
+    
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    transition: all 2s;
+}
+
+/* modificaciones contacto */
+
+.contacto__background{
+    background-color: rgb(99, 0, 0);
+}
+
+.contacto__main iframe{
+    width: 100%;
+}
+
+.contacto__main h3{
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.border-radius{
+    border-radius: 10px;
+    border: none;
+}
+
+.ancho{
+    width: 29rem;
+}
+
+.form--fuente{
+    color: white;
+    margin: .5rem 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+button{
+    padding: .5rem 1rem;
+    margin: 1rem 3rem 4rem 3rem;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+
+.nombre{
+    position: relative;
+    right: 12rem;
+}
+
+.servicio{
+    position: relative;
+    right: 11.9rem;
+}
+
+.comentarios{
+    position: relative;
+    right: 10.5rem;
 }
 
 /* modificaciones footer */
@@ -294,6 +403,16 @@ footer iframe{
 /* animaciones */
 
 .servicios__main img:hover{
+    border-radius: 10%;
+    opacity: .5;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(119, 20, 20);
+}
+
+.conocenos__img:hover{
     border-radius: 10%;
     opacity: .5;
 }

@@ -48,8 +48,55 @@
             </div>
         </div>
     </header>
-    <main class="container-fluid">
-
+    <main class="container-fluid contacto__main">
+      <div class="row">
+        <div class="col-lg-12 col-12 col-xl-12 contacto__background">
+          <form action="#" class="d-flex justify-content-center align-items-center flex-column">
+            <div>
+              <h3>CONTACTO</h3>
+            </div>
+            <!-- casilla nombre -->
+            <div class="form--fuente nombre">NOMBRE:</div>
+            <input type="text" name="nombre" class="border-radius ancho">
+            <!-- casilla seleccion -->
+            <div class="form--fuente servicio">
+                SERVICIO: 
+            </div>
+            <div>    
+                <select name="SERVICIO" id="SERVICIO" class="border-radius ancho">
+                    <option value="Servicio Tecnico">RESERVAS</option>
+                    <option value="Mantenimiento">QUEJAS Y SUGERENCIAS</option>
+                    <option value="Ventas">FECHAS ESPECIALES</option>
+                </select>
+            </div>
+            <div class="form--fuente comentarios">
+                COMENTARIOS:
+            </div>
+            <!-- caja de comentarios -->
+            <div class="textarea">
+                <textarea name="" id="" cols="61" rows="15" class="border-radius"></textarea>
+            </div>
+            <!-- casilla de checkbox terminos y condiciones -->
+            <div class="form--fuente">
+                Acepto términos y condiciones
+                <input type="checkbox" name="aceptar" value="1">
+            </div>
+             <!--botones enviar y limpiar  -->
+             <div class="d-flex justify-content-center align-items-center">
+                <div>
+                    <button type="submit">ENVIAR</button>
+                </div>
+                <div>
+                    <button type="reset">LIMPIAR</button>
+                </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-12 col-xl-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.4329744588467!2d-75.77703200116761!3d2.026120034848653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e251eec0c707555%3A0x25c6ae4331a120a2!2sRestaurante%20La%20Estaci%C3%B3n!5e0!3m2!1sen!2sar!4v1645584651717!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </main>
     <!-- apertura footer -->
     <footer class="container-fluid">
