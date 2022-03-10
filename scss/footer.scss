@@ -1,0 +1,29 @@
+footer{
+    background-color: $bg-Principal;
+
+    p{
+        color: $textoW;
+    }
+
+    h5{
+        color: $textoW;
+        margin: 3rem 0 3rem 0;
+    }
+
+    iframe{
+        width: auto;
+        height: auto;
+    }
+
+    .footer1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        img{
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+    }
+}

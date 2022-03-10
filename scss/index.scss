@@ -1,0 +1,50 @@
+.index__main{
+
+    .img-fluid{
+        width: 100%;
+    }
+
+    .main__frase{
+        font-family: 'Staatliches', cursive;
+        width: 100%;
+        text-align: center;
+        font-size: 140px;
+        color: $textoW;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .index__imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    h2{
+        margin: 10rem 0;
+        font-size: 140px;
+        font-family: 'Inspiration', cursive;
+    }
+
+    h4{
+        font-size: 2.2rem;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+
+    .index__imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5rem 0;
+
+        img{
+            margin-bottom: 2rem;
+        }
+    }
+
+}
