@@ -1,0 +1,15 @@
+$fuentes:(
+    statchlines: $Fuente1,
+    inspiration: $Fuente2,
+    shoulders: $Fuente3,
+    oswald: $Fuente4,
+    cookie: $Fuente5,
+    raleway: $Fuente6
+);
+
+@each $lugar, $fuente in $fuentes {
+    .fuente--#{$lugar}{
+        font-family: $fuente;
+    }
+    
+}
