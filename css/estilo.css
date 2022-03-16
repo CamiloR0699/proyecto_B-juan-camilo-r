@@ -61,16 +61,6 @@ header {
 .index__main .img-fluid {
   width: 100%; }
 
-.index__main .main__frase, .index__main .conocenos__main .menu__frase, .conocenos__main .index__main .menu__frase {
-  width: 100%;
-  text-align: center;
-  font-size: 140px;
-  color: white;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 .index__main h2 {
   margin: 10rem 0;
   font-size: 140px; }
@@ -86,6 +76,60 @@ header {
   margin: 5rem 0; }
   .index__main .index__imagenes img {
     margin-bottom: 2rem; }
+
+.main__frase {
+  width: 100%;
+  text-align: center;
+  font-size: 140px;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+@media only screen and (max-width: 768px) {
+  .main__frase {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .index__main h2 {
+    font-size: 3rem;
+    font-family: 'Inspiration', cursive;
+    margin: 2rem 0; }
+  .index__imagenes {
+    margin: 2rem 0; }
+  .index__imagenes img {
+    width: 5rem; }
+  .index__main h4 {
+    font-size: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    padding: 0; }
+  .main__frase {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .index__main h2 {
+    font-size: 3rem;
+    font-family: 'Inspiration', cursive;
+    margin: 2rem 0; }
+  .index__imagenes {
+    margin: 2rem 0; }
+  .index__imagenes img {
+    width: 5rem; }
+  .index__main h4 {
+    font-size: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    padding: 0; } }
 
 .servicios__main img {
   margin: 1rem  0;
@@ -112,27 +156,6 @@ header {
 .menu__main .menu--margin {
   margin-bottom: 1rem; }
 
-.conocenos__main .main__frase, .conocenos__main .menu__frase {
-  color: white;
-  font-size: 140px;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.conocenos__main .menu__frase {
-  color: white;
-  font-size: 10rem;
-  font-weight: 700; }
-
-.conocenos__main .conocenos__texto1, .conocenos__main .conocenos__texto2 {
-  color: #1b1717;
-  font-size: 1.5rem;
-  margin: 5rem 8rem;
-  text-align: justify; }
-
 .conocenos__main .conocenos__texto2 {
   margin: 0 8rem 0 0; }
 
@@ -144,7 +167,24 @@ header {
     border-radius: 50%;
     opacity: .5; }
 
-.contacto__main iframe {
+.conocenos__texto1, .conocenos__main .conocenos__texto2 {
+  color: #1b1717;
+  font-size: 1.5rem;
+  margin: 5rem 8rem;
+  text-align: justify; }
+
+.menu__frase {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10rem;
+  font-weight: 700; }
+
+iframe {
   width: 100%; }
 
 .contacto__main h3 {
@@ -153,22 +193,22 @@ header {
   margin-top: 3rem;
   margin-bottom: 2rem; }
 
-.contacto__main .contacto__background {
+.contacto__background {
   background-color: #630000; }
 
-.contacto__main .border-radius {
+.border-radius {
   border-radius: 10px;
   border: none; }
 
-.contacto__main .ancho {
+.ancho {
   width: 29rem; }
 
-.contacto__main .form--fuente {
+.form--fuente {
   color: white;
   font-size: 1.1rem;
   margin: .5rem 0; }
 
-.contacto__main .boton {
+.boton {
   padding: .5rem 1rem;
   margin: 1rem 3rem 4rem 3rem;
   background: none;
@@ -180,7 +220,7 @@ header {
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
   font-family: 'Raleway', sans-serif; }
-  .contacto__main .boton:after {
+  .boton:after {
     content: '';
     position: absolute;
     display: block;
@@ -194,19 +234,19 @@ header {
     z-index: -1;
     -webkit-transition: width 150ms ease-in-out;
     transition: width 150ms ease-in-out; }
-  .contacto__main .boton:hover {
+  .boton:hover {
     color: #ad0e0e; }
-  .contacto__main .boton:hover:after {
+  .boton:hover:after {
     width: 110%; }
 
-.contacto__main .nombre, .contacto__main .servicio, .contacto__main .comentarios {
+.nombre, .servicio, .comentarios {
   position: relative;
   right: 12rem; }
 
-.contacto__main .servicio {
+.servicio {
   right: 11.9rem; }
 
-.contacto__main .comentarios {
+.comentarios {
   right: 10.5rem; }
 
 main {
@@ -218,28 +258,6 @@ main {
     width: 40px; }
   li a {
     font-size: 1rem; }
-  /* media querie index */
-  .main__frase, .conocenos__main .menu__frase {
-    font-family: 'Staatliches', cursive;
-    font-size: 1.8rem;
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .index__main h2 {
-    font-size: 3rem;
-    font-family: 'Inspiration', cursive;
-    margin: 2rem 0; }
-  .index__imagenes {
-    margin: 2rem 0; }
-  .index__imagenes img {
-    width: 5rem; }
-  .index__main h4 {
-    font-size: 1rem;
-    font-family: 'Big Shoulders Display', cursive;
-    margin: 0;
-    padding: 0; }
   /* media querie servicios */
   .invertir {
     flex-direction: column-reverse; }
@@ -266,7 +284,7 @@ main {
   /* media querie contacto */
   .ancho {
     width: 15rem; }
-  .nombre, .contacto__main .servicio, .contacto__main .comentarios {
+  .nombre, .servicio, .comentarios {
     position: relative;
     right: 5.5rem; }
   .servicio {
@@ -307,7 +325,7 @@ main {
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   /* media querie index */
-  .main__frase, .conocenos__main .menu__frase {
+  .main__frase {
     font-size: 4rem; }
   .index__main h2 {
     font-size: 5rem;
@@ -348,7 +366,7 @@ main {
 
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
   /* media querie servicos */
-  .main__frase, .conocenos__main .menu__frase {
+  .main__frase {
     font-size: 6rem; }
   article p {
     font-size: 1rem; }

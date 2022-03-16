@@ -3,86 +3,82 @@
     font-size: $font-size;
 }
 
-.contacto__main{
+iframe{
+    width: 100%;
+}
 
-    iframe{
-        width: 100%;
-    }
+.contacto__main h3{
+    @include texto($textoW, 2.5rem);  
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
 
-    h3{
-        @include texto($textoW, 2.5rem);  
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
+.contacto__background{
+    background-color: $bg-Principal;
+}
 
-    .contacto__background{
-        background-color: $bg-Principal;
-    }
+.border-radius{
+    border-radius: 10px;
+    border: none;
+}
 
-    .border-radius{
-        border-radius: 10px;
-        border: none;
-    }
-    
-    .ancho{
-        width: 29rem;
-    }
-    
-    .form--fuente{
-        @include texto($textoW, 1.1rem);  
-        margin: .5rem 0;
-    }
-    
-    .boton {
-        padding: .5rem 1rem;
-        margin: 1rem 3rem 4rem 3rem;
-        background: none;
-        border: 3px solid $textoW;  
-        color: $textoW;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        -webkit-transition: color 150ms ease-in-out;
-        transition: color 150ms ease-in-out;
-        font-family: 'Raleway', sans-serif;
 
-        &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-                    transform: translateX(-50%);
-            width: 0;
-            height: 100%;
-            background: #ffffff;
-            z-index: -1;
-            -webkit-transition: width 150ms ease-in-out;
-            transition: width 150ms ease-in-out;
-        }
+.ancho{
+    width: 29rem;
+}
 
-        &:hover {
-            color: rgb(173, 14, 14);
-        }
-          
-        &:hover:after {
-            width: 110%;
-        }
-    }
+.form--fuente{
+    @include texto($textoW, 1.1rem);  
+    margin: .5rem 0;
+}
 
-    .nombre{
-        position: relative;
-        right: 12rem;
+.boton {
+    padding: .5rem 1rem;
+    margin: 1rem 3rem 4rem 3rem;
+    background: none;
+    border: 3px solid $textoW;  
+    color: $textoW;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    font-family: 'Raleway', sans-serif;
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: #ffffff;
+        z-index: -1;
+        -webkit-transition: width 150ms ease-in-out;
+        transition: width 150ms ease-in-out;
     }
-    
-    .servicio{
-        @extend .nombre;
-        right: 11.9rem;
+    &:hover {
+        color: rgb(173, 14, 14);
     }
-    
-    .comentarios{
-        @extend .nombre;
-        right: 10.5rem;
+      
+    &:hover:after {
+        width: 110%;
     }
+}
+
+.nombre{
+    position: relative;
+    right: 12rem;
+}
+
+.servicio{
+    @extend .nombre;
+    right: 11.9rem;
+}
+
+.comentarios{
+    @extend .nombre;
+    right: 10.5rem;
 }
