@@ -28,3 +28,63 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+
+    .servicios__main{
+
+        .invertir{
+            flex-direction: column-reverse;
+        }
+        
+        article{
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }        
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    .servicios__main{
+    
+        .invertir{
+            flex-direction: column-reverse;
+        }
+    
+        article{
+    
+            p{
+               font-size: 1rem;
+            }
+    
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px){
+
+    .servicios__main{
+    
+        .main__frase{
+            font-size: 6rem
+        }
+    
+        article{
+    
+            p{
+                font-size: 1rem;
+            }
+        } 
+    }
+}
+ 

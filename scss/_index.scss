@@ -1,9 +1,21 @@
 .index__main{
 
+    .main__frase{
+        width: 100%;
+        text-align: center;
+        font-size: 140px;
+        color: $textoW;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .img-fluid{
         width: 100%;
     }
 
+    
     h2{
         margin: 10rem 0;
         font-size: 140px;
@@ -27,79 +39,105 @@
 
 }
 
-.main__frase{
-    width: 100%;
-    text-align: center;
-    font-size: 140px;
-    color: $textoW;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 @media only screen and (max-width: 768px){
 
-    .main__frase{
-        font-family: 'Staatliches', cursive;
-        font-size: 1.8rem;
-        color: rgb(255, 255, 255);
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .index__main {
+
+        .main__frase{
+                font-family: 'Staatliches', cursive;
+                font-size: 1.8rem;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         
-    }
+    
+    
+        h2{
+            font-size: 3rem;
+            font-family: 'Inspiration', cursive;
+            margin: 2rem 0;
+        }
+    
+        .index__imagenes{
+            margin: 2rem 0;
+        }
+    
+        .index__imagenes img{
+            width: 5rem;
+        }
+    
+        .index__main h4{
+            font-size: 1rem;
+            font-family: 'Big Shoulders Display', cursive;
+            margin: 0;
+            padding: 0;
+        }
 
-    .index__main h2{
-        font-size: 3rem;
-        font-family: 'Inspiration', cursive;
-        margin: 2rem 0;
-    }
-
-    .index__imagenes{
-        margin: 2rem 0;
-    }
-
-    .index__imagenes img{
-        width: 5rem;
-    }
-
-    .index__main h4{
-        font-size: 1rem;
-        font-family: 'Big Shoulders Display', cursive;
-        margin: 0;
-        padding: 0;
-    }
-    .main__frase{
-        font-family: 'Staatliches', cursive;
-        font-size: 1.8rem;
-        color: rgb(255, 255, 255);
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-
-    .index__main h2{
-        font-size: 3rem;
-        font-family: 'Inspiration', cursive;
-        margin: 2rem 0;
-    }
-
-    .index__imagenes{
-        margin: 2rem 0;
-    }
-
-    .index__imagenes img{
-        width: 5rem;
-    }
-
-    .index__main h4{
-        font-size: 1rem;
-        font-family: 'Big Shoulders Display', cursive;
-        margin: 0;
-        padding: 0;
+        .main__frase{
+            font-family: 'Staatliches', cursive;
+            font-size: 1.8rem;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    
+        h2{
+            font-size: 3rem;
+            font-family: 'Inspiration', cursive;
+            margin: 2rem 0;
+        }
+    
+        .index__imagenes{
+            margin: 2rem 0;
+        }
+    
+        .index__imagenes img{
+            width: 5rem;
+        }
+    
+        h4{
+            font-size: 1rem;
+            font-family: 'Big Shoulders Display', cursive;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    .index__main{
+    
+        .main__frase{
+            font-size: 4rem;
+        }
+        
+        h2{
+            font-size: 5rem;
+            font-family: 'Inspiration', cursive;
+            margin: 2rem 0;
+        }
+        
+        h4{
+            font-size: 1.5rem;
+            font-family: 'Big Shoulders Display', cursive;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .index__imagenes{
+            margin: 2rem 0;
+    
+            img{
+                width: 7rem;
+            }
+        }
+    }
+}
+

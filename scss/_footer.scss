@@ -27,3 +27,44 @@ footer{
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+
+    footer{
+    
+        h5{
+            font-size: .9rem;
+        }
+        
+        p{
+            font-size: .7rem;
+        }
+        
+        .footer__img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer__logo{
+            width: 4rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer3{
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    .footer__logo{
+        width: 4.5rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+

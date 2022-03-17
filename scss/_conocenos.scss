@@ -5,6 +5,23 @@
 
 .conocenos__main{
 
+    .menu__frase{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include texto($textoW, 10rem);
+        font-weight: 700;
+    }
+
+    .conocenos__texto1{
+        @include texto($textoB, 1.5rem);
+        margin: 5rem 8rem;
+        text-align: justify;
+    }
+
     .conocenos__texto2{
         @extend .conocenos__texto1;
         margin: 0 8rem 0 0;
@@ -21,19 +38,74 @@
         }
     }
 }
-.conocenos__texto1{
-    @include texto($textoB, 1.5rem);
-    margin: 5rem 8rem;
-    text-align: justify;
+
+@media only screen and (max-width: 768px){
+
+    .conocenos__main{
+
+        .menu__frase{
+            font-size: 2rem;
+        }
+        
+        .conocenos__texto1{
+            font-size: .8rem;
+            margin: 0;
+            margin: 1rem 0;
+        }
+        
+        .conocenos__texto2{
+            font-size: .8rem;
+            margin: 0;
+            margin: 1rem 0;
+        }
+        
+        .conocenos__img{
+            margin: 0;
+        }
+    }
 }
 
-.menu__frase{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @include texto($textoW, 10rem);
-    font-weight: 700;
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    .conocenos__main{
+    
+        .menu__frase{
+            font-size: 5rem;
+        }
+    
+        .conocenos__texto1{
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+    
+        .conocenos__texto2{
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+    
+        .conocenos__img{
+            margin: 1rem 0;
+        }
+    }
 }
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px){
+
+    .conocenos__main{
+
+        .menu__frase{
+            font-size: 7rem;
+        }
+    
+        .conocenos__texto1{
+            margin: 1rem;
+            font-size: 1.3rem;
+        }
+    
+        .conocenos__texto2{
+            margin: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+
