@@ -193,7 +193,7 @@ header {
       font-size: 2.2rem; }
     .servicios__main section article p {
       font-size: 1.2rem;
-      text-align: justify; }
+      text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .servicios__main .invertir {
